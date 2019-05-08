@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="8.3.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>Winkelstecker32pol</description>
+<packages>
+<package name="STECK-32POL-W-HARTING">
+<description>Winkelstecker-32pol-Harting</description>
+<pad name="9A" x="-1.27" y="-1.27" drill="1" shape="octagon"/>
+<pad name="10A" x="-3.81" y="-1.27" drill="1" shape="octagon"/>
+<pad name="11A" x="-6.35" y="-1.27" drill="1" shape="octagon"/>
+<pad name="12A" x="-8.89" y="-1.27" drill="1" shape="octagon"/>
+<pad name="13A" x="-11.43" y="-1.27" drill="1" shape="octagon"/>
+<pad name="14A" x="-13.97" y="-1.27" drill="1" shape="octagon"/>
+<pad name="15A" x="-16.51" y="-1.27" drill="1" shape="octagon"/>
+<pad name="16A" x="-19.05" y="-1.27" drill="1" shape="octagon"/>
+<pad name="8A" x="1.27" y="-1.27" drill="1" shape="octagon"/>
+<pad name="7A" x="3.81" y="-1.27" drill="1" shape="octagon"/>
+<pad name="6A" x="6.35" y="-1.27" drill="1" shape="octagon"/>
+<pad name="5A" x="8.89" y="-1.27" drill="1" shape="octagon"/>
+<pad name="4A" x="11.43" y="-1.27" drill="1" shape="octagon"/>
+<pad name="3A" x="13.97" y="-1.27" drill="1" shape="octagon"/>
+<pad name="2A" x="16.51" y="-1.27" drill="1" shape="octagon"/>
+<pad name="1A" x="19.05" y="-1.27" drill="1" shape="square"/>
+<pad name="16B" x="-19.05" y="1.27" drill="1" shape="octagon"/>
+<pad name="15B" x="-16.51" y="1.27" drill="1" shape="octagon"/>
+<pad name="14B" x="-13.97" y="1.27" drill="1" shape="octagon"/>
+<pad name="13B" x="-11.43" y="1.27" drill="1" shape="octagon"/>
+<pad name="12B" x="-8.89" y="1.27" drill="1" shape="octagon"/>
+<pad name="11B" x="-6.35" y="1.27" drill="1" shape="octagon"/>
+<pad name="10B" x="-3.81" y="1.27" drill="1" shape="octagon"/>
+<pad name="9B" x="-1.27" y="1.27" drill="1" shape="octagon"/>
+<pad name="8B" x="1.27" y="1.27" drill="1" shape="octagon"/>
+<pad name="7B" x="3.81" y="1.27" drill="1" shape="octagon"/>
+<pad name="6B" x="6.35" y="1.27" drill="1" shape="octagon"/>
+<pad name="5B" x="8.89" y="1.27" drill="1" shape="octagon"/>
+<pad name="4B" x="11.43" y="1.27" drill="1" shape="octagon"/>
+<pad name="3B" x="13.97" y="1.27" drill="1" shape="octagon"/>
+<pad name="2B" x="16.51" y="1.27" drill="1" shape="octagon"/>
+<pad name="1B" x="19.05" y="1.27" drill="1" shape="square"/>
+<hole x="-24.13" y="-3.81" drill="2.8"/>
+<hole x="24.13" y="-3.81" drill="2.8"/>
+<wire x1="27" y1="-0.9" x2="27" y2="-7.5" width="0.127" layer="21"/>
+<wire x1="27" y1="-7.5" x2="21.59" y2="-7.5" width="0.127" layer="21"/>
+<wire x1="21.59" y1="-7.5" x2="21.59" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="21.59" y1="-8.89" x2="-20.32" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="-20.32" y1="-8.89" x2="-20.32" y2="-7.5" width="0.127" layer="21"/>
+<wire x1="-20.32" y1="-7.5" x2="-27" y2="-7.5" width="0.127" layer="21"/>
+<wire x1="-27" y1="-7.5" x2="-27" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="-27" y1="-0.9" x2="-20.32" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="-20.32" y1="-0.9" x2="-20.32" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-20.32" y1="-2.54" x2="20.32" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="20.32" y1="-2.54" x2="20.32" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="20.32" y1="-0.9" x2="27" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="-29.21" y1="-6.57" x2="29.21" y2="-6.57" width="0.127" layer="21" style="shortdash"/>
+<text x="-27.94" y="0" size="1.27" layer="21">&gt;Name</text>
+<wire x1="-20.32" y1="2.54" x2="-20.32" y2="0" width="0.127" layer="39"/>
+<wire x1="-20.32" y1="0" x2="-27.94" y2="0" width="0.127" layer="39"/>
+<wire x1="-27.94" y1="0" x2="-27.94" y2="-8.89" width="0.127" layer="39"/>
+<wire x1="-27.94" y1="-8.89" x2="27.94" y2="-8.89" width="0.127" layer="39"/>
+<wire x1="27.94" y1="-8.89" x2="27.94" y2="0" width="0.127" layer="39"/>
+<wire x1="27.94" y1="0" x2="20.32" y2="0" width="0.127" layer="39"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="2.54" width="0.127" layer="39"/>
+<wire x1="20.32" y1="2.54" x2="-20.32" y2="2.54" width="0.127" layer="39"/>
+</package>
+</packages>
+<symbols>
+<symbol name="STECK-32POL-W-HARTING">
+<description>Winkelstecker-32pol-Harting</description>
+<pin name="8A" x="-1.27" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="7A" x="-3.81" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="6A" x="-6.35" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="5A" x="-8.89" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="4A" x="-11.43" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="3A" x="-13.97" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="2A" x="-16.51" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="1A" x="-19.05" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="9A" x="1.27" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="10A" x="3.81" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="11A" x="6.35" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="12A" x="8.89" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="13A" x="11.43" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="14A" x="13.97" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="15A" x="16.51" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="16A" x="19.05" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="1B" x="-19.05" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="2B" x="-16.51" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="3B" x="-13.97" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="4B" x="-11.43" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="5B" x="-8.89" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="6B" x="-6.35" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="7B" x="-3.81" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="8B" x="-1.27" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="9B" x="1.27" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="10B" x="3.81" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="11B" x="6.35" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="12B" x="8.89" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="13B" x="11.43" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="14B" x="13.97" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="15B" x="16.51" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="16B" x="19.05" y="5.08" visible="off" length="short" rot="R270"/>
+<text x="-19.685" y="-5.715" size="1.27" layer="94" rot="R90">1A</text>
+<text x="-17.145" y="-5.715" size="1.27" layer="94" rot="R90">2A</text>
+<text x="-14.605" y="-5.715" size="1.27" layer="94" rot="R90">3A</text>
+<text x="-12.065" y="-5.715" size="1.27" layer="94" rot="R90">4A</text>
+<text x="-9.525" y="-5.715" size="1.27" layer="94" rot="R90">5A</text>
+<text x="-6.985" y="-5.715" size="1.27" layer="94" rot="R90">6A</text>
+<text x="-4.445" y="-5.715" size="1.27" layer="94" rot="R90">7A</text>
+<text x="-1.905" y="-5.715" size="1.27" layer="94" rot="R90">8A</text>
+<text x="0.635" y="-5.715" size="1.27" layer="94" rot="R90">9A</text>
+<text x="3.175" y="-5.715" size="1.27" layer="94" rot="R90">10A</text>
+<text x="5.715" y="-5.715" size="1.27" layer="94" rot="R90">11A</text>
+<text x="8.255" y="-5.715" size="1.27" layer="94" rot="R90">12A</text>
+<text x="10.795" y="-5.715" size="1.27" layer="94" rot="R90">13A</text>
+<text x="13.335" y="-5.715" size="1.27" layer="94" rot="R90">14A</text>
+<text x="15.875" y="-5.715" size="1.27" layer="94" rot="R90">15A</text>
+<text x="18.415" y="-5.715" size="1.27" layer="94" rot="R90">16A</text>
+<text x="-19.685" y="2.54" size="1.27" layer="94" rot="R90">1B</text>
+<text x="-17.145" y="2.54" size="1.27" layer="94" rot="R90">2B</text>
+<text x="-14.605" y="2.54" size="1.27" layer="94" rot="R90">3B</text>
+<text x="-12.065" y="2.54" size="1.27" layer="94" rot="R90">4B</text>
+<text x="-9.525" y="2.54" size="1.27" layer="94" rot="R90">5B</text>
+<text x="-6.985" y="2.54" size="1.27" layer="94" rot="R90">6B</text>
+<text x="-4.445" y="2.54" size="1.27" layer="94" rot="R90">7B</text>
+<text x="-1.905" y="2.54" size="1.27" layer="94" rot="R90">8B</text>
+<text x="0.635" y="2.54" size="1.27" layer="94" rot="R90">9B</text>
+<text x="3.175" y="2.54" size="1.27" layer="94" rot="R90">10B</text>
+<text x="5.715" y="2.54" size="1.27" layer="94" rot="R90">11B</text>
+<text x="8.255" y="2.54" size="1.27" layer="94" rot="R90">12B</text>
+<text x="10.795" y="2.54" size="1.27" layer="94" rot="R90">13B</text>
+<text x="13.335" y="2.54" size="1.27" layer="94" rot="R90">14B</text>
+<text x="15.875" y="2.54" size="1.27" layer="94" rot="R90">15B</text>
+<text x="18.415" y="2.54" size="1.27" layer="94" rot="R90">16B</text>
+<wire x1="-21.59" y1="2.54" x2="21.59" y2="2.54" width="0.1" layer="94"/>
+<wire x1="21.59" y1="2.54" x2="21.59" y2="-2.54" width="0.1" layer="94"/>
+<wire x1="21.59" y1="-2.54" x2="-21.59" y2="-2.54" width="0.1" layer="94"/>
+<wire x1="-21.59" y1="-2.54" x2="-21.59" y2="2.54" width="0.1" layer="94"/>
+<text x="-22.86" y="-3.175" size="1.27" layer="95" rot="R90">&gt;Name</text>
+<text x="5.715" y="-0.635" size="1.27" layer="95">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="STECK-32POL-W-HARTING">
+<description>Winkelstecker-32pol-Harting</description>
+<gates>
+<gate name="G$1" symbol="STECK-32POL-W-HARTING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="STECK-32POL-W-HARTING">
+<connects>
+<connect gate="G$1" pin="10A" pad="10A"/>
+<connect gate="G$1" pin="10B" pad="10B"/>
+<connect gate="G$1" pin="11A" pad="11A"/>
+<connect gate="G$1" pin="11B" pad="11B"/>
+<connect gate="G$1" pin="12A" pad="12A"/>
+<connect gate="G$1" pin="12B" pad="12B"/>
+<connect gate="G$1" pin="13A" pad="13A"/>
+<connect gate="G$1" pin="13B" pad="13B"/>
+<connect gate="G$1" pin="14A" pad="14A"/>
+<connect gate="G$1" pin="14B" pad="14B"/>
+<connect gate="G$1" pin="15A" pad="15A"/>
+<connect gate="G$1" pin="15B" pad="15B"/>
+<connect gate="G$1" pin="16A" pad="16A"/>
+<connect gate="G$1" pin="16B" pad="16B"/>
+<connect gate="G$1" pin="1A" pad="1A"/>
+<connect gate="G$1" pin="1B" pad="1B"/>
+<connect gate="G$1" pin="2A" pad="2A"/>
+<connect gate="G$1" pin="2B" pad="2B"/>
+<connect gate="G$1" pin="3A" pad="3A"/>
+<connect gate="G$1" pin="3B" pad="3B"/>
+<connect gate="G$1" pin="4A" pad="4A"/>
+<connect gate="G$1" pin="4B" pad="4B"/>
+<connect gate="G$1" pin="5A" pad="5A"/>
+<connect gate="G$1" pin="5B" pad="5B"/>
+<connect gate="G$1" pin="6A" pad="6A"/>
+<connect gate="G$1" pin="6B" pad="6B"/>
+<connect gate="G$1" pin="7A" pad="7A"/>
+<connect gate="G$1" pin="7B" pad="7B"/>
+<connect gate="G$1" pin="8A" pad="8A"/>
+<connect gate="G$1" pin="8B" pad="8B"/>
+<connect gate="G$1" pin="9A" pad="9A"/>
+<connect gate="G$1" pin="9B" pad="9B"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
