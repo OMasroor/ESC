@@ -4,13 +4,18 @@ int driverB1_o = 6;
 int driverB2_o = 9;
 int driverC1_o = 10;
 int driverC2_o = 11;
-int pot_i = A0;
 
+int pot_i = A0;
+int PulseLength;
+int v;
 int phase = 1;
+
+unsigned long time1;
+unsigned long time2;
 
 void setup() {
 
-	Serial.begin(9600);
+	Serial.begin(2000000);
 
 	pinMode(driverA1_o, OUTPUT);
 	pinMode(driverA2_o, OUTPUT);
@@ -19,12 +24,18 @@ void setup() {
 	pinMode(driverC1_o, OUTPUT);
 	pinMode(driverC2_o, OUTPUT);
 	pinMode(pot_i, INPUT);
+	
+	time1 = micros();
 
 }
 
 void loop() {
 
-	switch(phase) {
+	time2 = micros();
+	if (time2 - time1 >= PulseLength) {
+		time1 = time1 + PulseLength;
+
+		switch (phase) {
 		case 1:
 			digitalWrite(driverA1_o, LOW);
 			digitalWrite(driverA2_o, LOW);
@@ -78,14 +89,18 @@ void loop() {
 			digitalWrite(driverC1_o, HIGH);
 			digitalWrite(driverC2_o, LOW);
 			break;
+		}
+
+		v = analogRead(pot_i);
+
+		PulseLength = map(v, 0, 1023, 30000, 1);
+
+		//Serial.print("time1 is: ");
+		//Serial.println(time1);
+		//Serial.print("time2 is: ");
+		//Serial.println(time2);
+
+		phase = phase + 1;
+		if (phase > 6) phase = 1;
 	}
-
-	int v = analogRead(pot_i);
-	Serial.println(v);
-	int speed = map(v, 0, 1023, 250, 10);
-
-	phase = phase + 1;
-	if (phase > 6) phase = 1;
-	delay(speed);
-
 }
