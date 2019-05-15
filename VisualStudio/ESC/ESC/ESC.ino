@@ -6,7 +6,7 @@ int driverC1_o = 10;
 int driverC2_o = 11;
 
 int pot_i = A0;
-int PulseLength;
+int Speed;
 int v;
 int phase = 1;
 
@@ -32,8 +32,8 @@ void setup() {
 void loop() {
 
 	time2 = micros();
-	if (time2 - time1 >= PulseLength) {
-		time1 = time1 + PulseLength;
+	if (time2 - time1 >= Speed) {
+		time1 = time1 + Speed;
 
 		switch (phase) {
 		case 1:
@@ -93,7 +93,7 @@ void loop() {
 
 		v = analogRead(pot_i);
 
-		PulseLength = map(v, 0, 1023, 30000, 1);
+		Speed = map(v, 0, 1023, 30000, 1);
 
 		//Serial.print("time1 is: ");
 		//Serial.println(time1);
